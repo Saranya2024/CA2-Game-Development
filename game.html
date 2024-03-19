@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Me If You Can</title> 
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1><b>Guess Me If You Can</b></h1>
+    <div class="content">
+      <input type="text" class="typing-input" maxlength="1">
+      <div class="inputs"></div>
+      <div class="details">
+        <p class="hint"><b>Hint: </b> <span></span></p>
+        <p class="guess-left"><b>Remaining guesses: </b><span></span></p>
+        <p class="wrong-letter"><b>Wrong letters: </b> <span></span></p>
+        <p class="score" style="display: none;"><b>Score: </b>0<span></span></p>
+      </div>
+      <button class="reset-btn"><b>Reset Game</b></button>
+    </div>
+    <div id="gameOverScreen" style="display: none;"> 
+      <div class="gameOverBox">
+        <div id="gameOverMessage">Game Over</div>
+        <div id="finalScore">Final Score: 0</div>
+        <button class="play-again-btn" style="display: none;"><b>Play Again</b></button> 
+      </div>
+    </div>
+  </div>
+<script src="game.js"></script>
+</body>
+</html>
