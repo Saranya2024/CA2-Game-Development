@@ -1,0 +1,73 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('https://media.istockphoto.com/id/1004682020/photo/clouds-in-the-blue-sky.jpg?s=612x612&w=0&k=20&c=bsR5R7b8QXpXNJkVKvKFCPYLXvuGj2I7fZHwB63xvi8=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container, #gameInstructions {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid black; 
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button,#gameInstructions button {
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#gameInstructions h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#gameInstructions p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#gameInstructions ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
