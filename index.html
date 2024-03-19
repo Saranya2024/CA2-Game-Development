@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Development</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+  <form id="playerDetails">
+    <div class="form-container">
+      <label for="promptName">Name:</label>
+      <input type="text" id="promptName" name="promptName" required>
+      <label for="promptNickname">Nickname:</label>
+      <input type="text" id="promptNickname" name="promptNickname" required>
+      <button id="startGameButton" type="button"><b>Continue to Game🥳</b></button> 
+    </div>  
+  </form>
+
+<!-- Instruction section -->
+
+<div id="gameInstructions" style="display: none;">
+  <h2>Game Instructions</h2>
+  <p>Here are the rules of the game:</p>
+  <ul>
+    <li>You're given a set of attempts to guess the word correctly before the game starts.</li>
+    <li>You can make guesses by entering letters, depending on the complexity of the word.</li>
+    <li>Successfully guessing the word within the allotted attempts results in winning the game and earns 3 points.</li>
+    <li>Failing to guess the word within the attempts leads to losing the game.</li>
+    <li>ALL THE BEST</li>
+  </ul>
+  <button id="redirectGameButton" type="button"><b><em>Lets GO!!!🫣</em></b></button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
