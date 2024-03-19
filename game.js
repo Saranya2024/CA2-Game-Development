@@ -1,201 +1,202 @@
 const wordList = [
-  {
-    word: 'basketball',
-    hint: 'A popular team sport played with a ball and hoop.',
-  },
-  {
-    word: 'pizza',
-    hint: 'A savory dish consisting of a round, flattened base topped with cheese, tomatoes, and various other ingredients.',
-  },
-  {
-    word: 'unicorn',
-    hint: 'A mythical creature typically represented as a horse with a single straight horn projecting from its forehead.',
-  },
-  {
-    word: 'ocean',
-    hint: "A large body of saltwater that covers most of the Earth's surface.",
-  },
-  {
-    word: 'bicycle',
-    hint: 'A human-powered or motor-powered vehicle with two wheels.',
-  },
-  {
-    word: 'moon',
-    hint: 'The natural satellite of the Earth, visible chiefly at night by reflected light from the sun.',
-  },
-  {
-    word: 'chocolate',
-    hint: 'A sweet food made from roasted and ground cacao seeds, typically sweetened and flavored.',
-  },
-  {
-    word: 'dragon',
-    hint: 'A mythical creature resembling a giant reptile, typically depicted with wings, a long tail, and breathing fire.',
-  },
-  {
-    word: 'camera',
-    hint: 'An optical instrument used for recording or capturing images.',
-  },
-  {
-    word: 'garden',
-    hint: 'A piece of ground, often near a house, used for growing flowers, fruit, or vegetables.',
-  },
-  {
-    word: 'rainbow',
-    hint: 'A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light in water droplets.',
-  },
-  {
-    word: 'beach',
-    hint: 'A sandy or pebbly shore, especially by the ocean between high- and low-water marks.',
-  },
-  {
-    word: 'robot',
-    hint: 'A machine capable of carrying out a complex series of actions automatically, especially one programmable by a computer.',
-  },
-  {
-    word: 'butterfly',
-    hint: 'An insect with two pairs of large wings that are covered with tiny scales, typically brightly colored, and typically held erect when at rest.',
-  },
-  {
-    word: 'mountain',
-    hint: "A large natural elevation of the earth's surface rising abruptly from the surrounding level; a large steep hill.",
-  },
-  {
-    word: 'fireworks',
-    hint: 'A device containing gunpowder and other combustible chemicals that causes a spectacular explosion when ignited, used typically for display or in celebrations.',
-  },
-  {
-    word: 'rainforest',
-    hint: 'A dense forest rich in biodiversity, found typically in tropical areas with consistently heavy rainfall.',
-  },
-  {
-    word: 'superhero',
-    hint: 'A fictional hero having extraordinary or superhuman powers, such as Superman or Spiderman.',
-  },
-  {
-    word: 'volcano',
-    hint: "A mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth's crust.",
-  },
-  {
-    word: 'cake',
-    hint: 'An item of soft sweet food made from a mixture of flour, sugar, and other ingredients, typically baked and sometimes decorated.',
-  },
-  {
-    word: 'umbrella',
-    hint: "It keeps you dry when it's raining.",
-  },
-  {
-    word: 'book',
-    hint: 'You read it to gain knowledge or entertain yourself.',
-  },
-  {
-    word: 'sunflower',
-    hint: 'A tall plant with a large yellow flower that turns to face the sun.',
-  },
-  {
-    word: 'music',
-    hint: 'It can lift your mood and soothe your soul.',
-  },
-  {
-    word: 'cookie',
-    hint: 'A sweet baked food that you can dunk in milk.',
-  },
-  {
-    word: 'cloud',
-    hint: 'A visible mass of condensed water vapor floating in the atmosphere.',
-  },
-  {
-    word: 'puzzle',
-    hint: 'A game or problem designed to test ingenuity or knowledge.',
-  },
-  {
-    word: 'painting',
-    hint: 'A picture or design made using paint colors on a canvas or surface.',
-  },
-  {
-    word: 'candle',
-    hint: 'A stick of wax with a wick in the middle that is lit to produce light.',
-  },
-  {
-    word: 'treasure',
-    hint: 'Valuable items or wealth hidden or buried underground.',
-  },
-  {
-    word: 'sunglasses',
-    hint: 'Eyewear designed to protect the eyes from sunlight or glare.',
-  },
-  {
-    word: 'dolphin',
-    hint: 'A highly intelligent marine mammal known for its playful behavior and communication skills.',
-  },
-  {
-    word: 'rocket',
-    hint: 'A cylindrical device propelled by burning fuel, used for space travel or launching satellites.',
-  },
-  {
-    word: 'sandcastle',
-    hint: 'A structure made of sand, typically built by children at the beach.',
-  },
-  {
-    word: 'soccer',
-    hint: 'A team sport played between two teams of eleven players, using a spherical ball.',
-  },
-  {
-    word: 'ghost',
-    hint: 'The spirit or soul of a deceased person believed to appear to the living.',
-  },
-  {
-    word: 'icecream',
-    hint: 'A frozen dessert made from cream, sugar, and flavorings.',
-  },
-  {
-    word: 'carousel',
-    hint: 'A rotating platform with seats for riders, often found at amusement parks.',
-  },
-  {
-    word: 'tornado',
-    hint: 'A violently rotating column of air extending from a thunderstorm to the ground.',
-  },
-  {
-    word: 'keyboard',
-    hint: 'A set of keys or buttons used to input data into a computer or electronic device.',
-  },
-  {
-    word: 'lighthouse',
-    hint: 'A tall tower with a bright light at the top, located near hazardous areas to guide ships at sea.',
-  },
-  {
-    word: 'penguin',
-    hint: 'A flightless seabird found in the Southern Hemisphere, known for its black and white plumage.',
-  },
-  {
-    word: 'whale',
-    hint: 'A large marine mammal with a streamlined body and a blowhole for breathing air.',
-  },
-  {
-    word: 'waterfall',
-    hint: 'A cascade of water falling from a height, often found in rivers or streams.',
-  },
-  {
-    word: 'magic',
-    hint: 'The use of supernatural powers or rituals to achieve desired outcomes.',
-  },
-  {
-    word: 'jungle',
-    hint: 'A dense tropical forest with lush vegetation and abundant wildlife.',
-  },
-  {
-    word: 'diamond',
-    hint: 'A precious gemstone made of crystallized carbon, prized for its brilliance and clarity.',
-  },
-  {
-    word: 'map',
-    hint: 'A diagrammatic representation of an area, typically showing geographical features and political boundaries.',
-  },
-  {
-    word: 'kite',
-    hint: 'A toy consisting of a light frame with a thin material stretched over it, flown in the wind at the end of a long string.',
-  },
-];
+    {
+      word: 'galaxy',
+      hint: 'A vast collection of stars, planets, and other celestial bodies.',
+    },
+    {
+      word: 'adventure',
+      hint: 'Exciting and daring experience filled with risks and challenges.',
+    },
+    {
+      word: 'lantern',
+      hint: 'A portable light source, often used outdoors or during power outages.',
+    },
+    {
+      word: 'avalanche',
+      hint: 'A rapid flow of snow down a slope, often triggered by various factors.',
+    },
+    {
+      word: 'symphony',
+      hint: 'A musical composition typically involving multiple instruments and movements.',
+    },
+    {
+      word: 'serenade',
+      hint: 'A piece of music performed to someone as a token of affection.',
+    },
+    {
+      word: 'harmony',
+      hint: 'A pleasing arrangement of elements, often referring to musical notes or interpersonal relationships.',
+    },
+    {
+      word: 'saffron',
+      hint: 'A spice derived from the flower of Crocus sativus, known for its distinct flavor and color.',
+    },
+    {
+      word: 'tundra',
+      hint: 'A vast, treeless Arctic region with low-growing vegetation.',
+    },
+    {
+      word: 'mirage',
+      hint: 'An optical illusion caused by atmospheric conditions, often seen in deserts.',
+    },
+    {
+      word: 'echo',
+      hint: 'Reflection of sound waves, resulting in repetition of a sound.',
+    },
+    {
+      word: 'cascade',
+      hint: 'A small waterfall or a series of steps or stages.',
+    },
+    {
+      word: 'firefly',
+      hint: 'A small insect known for its bioluminescence, producing light.',
+    },
+    {
+      word: 'blossom',
+      hint: 'The flowering part of a plant, often associated with spring and renewal.',
+    },
+    {
+      word: 'bonsai',
+      hint: 'The art of cultivating miniature trees, often associated with Japanese culture.',
+    },
+    {
+      word: 'quasar',
+      hint: 'A distant celestial object emitting large amounts of energy.',
+    },
+    {
+      word: 'monsoon',
+      hint: 'A seasonal wind pattern causing heavy rainfall in certain regions.',
+    },
+    {
+      word: 'horizon',
+      hint: 'The apparent line that separates the earth from the sky.',
+    },
+    {
+      word: 'citadel',
+      hint: 'A fortress, typically on high ground, used for military defense.',
+    },
+    {
+      word: 'enigma',
+      hint: 'A mysterious or puzzling situation or person.',
+    },
+    {
+      word: 'aurora',
+      hint: 'A natural light display in the sky, predominantly seen in polar regions.',
+    },
+    {
+      word: 'tempest',
+      hint: 'A violent storm with strong winds and heavy rain.',
+    },
+    {
+      word: 'nebula',
+      hint: 'A cloud of gas and dust in outer space, often the birthplace of stars.',
+    },
+    {
+      word: 'rhapsody',
+      hint: 'A free-flowing instrumental composition expressing intense emotions.',
+    },
+    {
+      word: 'frostbite',
+      hint: 'Injury to skin and tissues caused by extreme cold.',
+    },
+    {
+      word: 'solstice',
+      hint: 'Either of the two times a year when the sun reaches its highest or lowest point in the sky.',
+    },
+    {
+      word: 'archipelago',
+      hint: 'A group or chain of islands.',
+    },
+    {
+      word: 'illusion',
+      hint: 'A false impression or perception of reality.',
+    },
+    {
+      word: 'elysium',
+      hint: 'A place or state of perfect happiness; paradise.',
+    },
+    {
+      word: 'luminary',
+      hint: 'A person who inspires or influences others, often in a particular field.',
+    },
+    {
+      word: 'odyssey',
+      hint: 'A long and eventful journey, often with significant experiences or adventures.',
+    },
+    {
+      word: 'radiance',
+      hint: 'Brightness or light emitted, often with warmth and positivity.',
+    },
+    {
+      word: 'solace',
+      hint: 'Comfort or consolation in a time of distress or sadness.',
+    },
+    {
+      word: 'celestial',
+      hint: 'Relating to the sky or outer space.',
+    },
+    {
+      word: 'zenith',
+      hint: 'The highest point reached by a celestial or other object.',
+    },
+    {
+      word: 'thunderbolt',
+      hint: 'A flash of lightning accompanied by thunder, often associated with storms.',
+    },
+    {
+      word: 'arboretum',
+      hint: 'A botanical garden devoted to trees.',
+    },
+    {
+      word: 'reverie',
+      hint: 'A state of daydreaming or pleasant thoughts.',
+    },
+    {
+      word: 'eclipse',
+      hint: 'The partial or complete blocking of one celestial body by another.',
+    },
+    {
+      word: 'mirage',
+      hint: 'An optical illusion caused by atmospheric conditions, often seen in deserts.',
+    },
+    {
+      word: 'euphoria',
+      hint: 'A feeling of intense excitement and happiness.',
+    },
+    {
+      word: 'whirlwind',
+      hint: 'A rapidly rotating column of air, often seen in tornadoes.',
+    },
+    {
+      word: 'serenity',
+      hint: 'The state of being calm, peaceful, and untroubled.',
+    },
+    {
+      word: 'panorama',
+      hint: 'An unbroken view of the entire surrounding area.',
+    },
+    {
+      word: 'ember',
+      hint: 'A small piece of burning or glowing coal or wood.',
+    },
+    {
+      word: 'oasis',
+      hint: 'A fertile spot in a desert where water is found.',
+    },
+    {
+      word: 'horizon',
+      hint: 'The apparent line that separates the earth from the sky.',
+    },
+    {
+      word: 'gossamer',
+      hint: 'Delicate and light, typically referring to fabric or wings.',
+    },
+    {
+      word: 'crestfallen',
+      hint: 'Disappointed or dejected, often after a failure or setback.',
+    },
+  ];
+  
 
 const inputs = document.querySelector('.inputs'),
   hintTag = document.querySelector('.hint span'),
