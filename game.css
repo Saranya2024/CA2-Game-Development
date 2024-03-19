@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  display: flex;
+  padding: 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #F8D7DA, #D6E9F5, #D4E7E9);
+}
+
+.wrapper {
+  width: 430px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper .content {
+  margin: 25px 25px 35px;
+}
+
+.content .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs input {
+  height: 72px;
+  width: 72px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #a4bfba;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+  pointer-events: none;
+  text-transform: uppercase;
+  border: 1px solid #B5B5B5;
+}
+
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+
+.inputs input:first-child {
+  margin-left: 0px;
+}
+
+.content .details {
+  margin: 20px 0 25px;
+}
+
+.details p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.content .reset-btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #090000;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #df6e6560;
+  transition: all 0.3s ease;
+}
+
+.content .reset-btn:hover {
+  background: #c8cecd;
+}
+
+#gameOverScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.gameOverBox {
+  background-color: white;
+  padding: 100px; 
+  border-radius: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gameOverMessage {
+  font-size: 36px;
+  font-weight: bold;
+  color: black; 
+  margin-bottom: 20px;
+}
+
+#finalScore {
+  font-size: 24px;
+  margin-top: 20px;
+  color: black;
+}
+
+.play-again-btn {
+  margin-top: 30px;
+  margin-left: 60px;
+  font-size: 24px;
+  background-color: #5d9776; 
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-again-btn:hover {
+  background-color: #93B2A9; 
+}
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper h1 {
+    font-size: 22px;
+    padding: 16px 20px;
+  }
+  .wrapper .content {
+    margin: 20px 20px 35px;
+  }
+  .inputs input {
+    height: 51px;
+    width: 50px;
+    margin: 3px;
+    font-size: 22px;
+  }
+  .details p {
+    font-size: 17px;
+  }
+  .content .reset-btn {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
